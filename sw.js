@@ -8,7 +8,7 @@ const ASSETS = [
   './landing.css',
   './landing.js',
   './manifest.json',
-  './icon.svg'
+  './icon.png'
 ];
 
 self.addEventListener('install', (e) => {
