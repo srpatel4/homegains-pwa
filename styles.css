@@ -243,5 +243,15 @@ footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size:
     .header-title { font-size: 3rem; }
     .tabs { flex-direction: column; padding: 0 2rem; }
     .tab-btn { justify-content: center; }
-    .floating-timer { bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); right: 1rem; left: 1rem; flex-direction: row; justify-content: space-between; }
+    .floating-timer { 
+        bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); 
+        right: 0.5rem; 
+        left: 0.5rem; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 0.8rem 1rem; 
+    }
+    .timer-display { font-size: 2.5rem; }
+    .timer-controls { gap: 0.3rem; }
+    .timer-btn { width: 38px; height: 38px; }
 }
