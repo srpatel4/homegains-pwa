@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 /* Noise */
@@ -184,11 +184,12 @@ h1, h2, h3, .logo {
 .ex-name { font-size: 2rem; color: var(--card-accent, #fff); line-height: 1; }
 
 .custom-checkbox {
-    display: block; position: relative; padding-left: 35px; cursor: pointer; font-size: 22px; user-select: none; transform: skewX(5deg);
+    display: block; position: relative; padding-left: 50px; cursor: pointer; font-size: 22px; user-select: none; transform: skewX(5deg);
+    min-height: 44px;
 }
 .custom-checkbox input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
 .checkmark {
-    position: absolute; top: 0; right: 0; height: 30px; width: 30px;
+    position: absolute; top: 0; right: 0; height: 44px; width: 44px;
     background-color: transparent; border: 2px solid var(--text-muted); transition: all 0.2s;
 }
 .custom-checkbox:hover input ~ .checkmark { border-color: var(--text); }
@@ -196,7 +197,7 @@ h1, h2, h3, .logo {
 .checkmark:after { content: ""; position: absolute; display: none; }
 .custom-checkbox input:checked ~ .checkmark:after { display: block; }
 .custom-checkbox .checkmark:after {
-    left: 10px; top: 4px; width: 6px; height: 14px; border: solid var(--bg); border-width: 0 3px 3px 0; transform: rotate(45deg);
+    left: 15px; top: 8px; width: 8px; height: 20px; border: solid var(--bg); border-width: 0 4px 4px 0; transform: rotate(45deg);
 }
 
 .ex-number {
